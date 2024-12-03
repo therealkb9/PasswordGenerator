@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="/home/kulaniles/myRepository/PasswordGenerator/assests/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <div class="generator">
+      <label for="passwordLength">Password Length:</label>
+      <input type="number" id="passwordLength" min="6" max="32" value="12">
+      
+      <div class="options">
+        <label>
+          <input type="checkbox" id="includeUppercase" checked> Include Uppercase
+        </label>
+        <label>
+          <input type="checkbox" id="includeNumbers" checked> Include Numbers
+        </label>
+        <label>
+          <input type="checkbox" id="includeSymbols" checked> Include Symbols
+        </label>
+      </div>
+      
+      <button id="generateBtn">Generate Password</button>
+      <input type="text" id="passwordOutput" readonly>
+    </div>
+  </div>
+
+  <script src="/home/kulaniles/myRepository/PasswordGenerator/assets/js/scripts.js"></script>
+</body>
+</html>
+
